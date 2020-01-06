@@ -1,0 +1,79 @@
+@import url("https://use.typekit.net/chy2kdu.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #273940;
+    color: #F2F2EB;
+    display: flex;
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.4rem;
+    height: 100vh;
+    letter-spacing: .025em;
+    text-align: center;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: #F2F2EB;
+    text-decoration: none;
+    transition: color .5s ease-in;
+
+    &:hover,
+    &:focus {
+        color: #435359; 
+        transition: color .5s ease-in;
+    }
+}
+
+.hero {
+    width: 90vw;
+    max-width: 1120px;
+    margin: auto auto;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    transition: transform 1s ease-in;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.fab {
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 2rem 0.25rem;
+}
+
+.fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
