@@ -8,42 +8,60 @@
 
 body {
   background-color: #273940;
-  color: #F2F2EB;
+  color: #f2f2eb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: proxima-nova, sans-serif;
   font-size: 1.4rem;
-  height: 100vh;
-  letter-spacing: .025em;
+  letter-spacing: 0.025em;
   text-align: center;
+  width: 100vw;
+  height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  color: #F2F2EB;
+  color: #f2f2eb;
   text-decoration: none;
-  -webkit-transition: color .5s ease-in;
-  transition: color .5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  transition: color 0.5s ease-in;
 }
 
 a:hover, a:focus {
   color: #435359;
-  -webkit-transition: color .5s ease-in;
-  transition: color .5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  transition: color 0.5s ease-in;
+}
+
+br {
+  display: none;
 }
 
 .hero {
-  width: 90vw;
-  max-width: 1120px;
-  margin: auto auto;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero-title {
-  font-size: 5rem;
+  font-size: 2.25rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   -webkit-transition: -webkit-transform 1s ease-in;
   transition: -webkit-transform 1s ease-in;
   transition: transform 1s ease-in;
@@ -55,15 +73,32 @@ a:hover, a:focus {
           transform: scale(1.1);
 }
 
-.fab {
-  display: inline-block;
-  font-size: 2.5rem;
-  margin: 2rem 0.25rem;
-}
-
 .fade-in {
   -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+}
+
+a.btn {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #273940;
+  display: block;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+}
+
+a.btn:first-of-type {
+  margin-top: 2.5rem;
+}
+
+a.btn:hover {
+  background-color: #273940;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 @-webkit-keyframes fade-in {
@@ -81,6 +116,32 @@ a:hover, a:focus {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    display: block;
+    max-width: 1120px;
+    margin: auto auto;
+    padding: 0.5rem;
+  }
+  .hero-title {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    -webkit-transition: -webkit-transform 1s ease-in;
+    transition: -webkit-transform 1s ease-in;
+    transition: transform 1s ease-in;
+    transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+  }
+  .hero-title:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  a.btn {
+    display: inline-block;
+    margin: 3rem 0.5;
   }
 }
 /*# sourceMappingURL=styles.css.map */
