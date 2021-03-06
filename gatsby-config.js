@@ -8,7 +8,7 @@ require("dotenv").config()
 module.exports = {
   /* Your site config here */
   plugins: [
-    'gatsby-plugin-sass',
+    `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
