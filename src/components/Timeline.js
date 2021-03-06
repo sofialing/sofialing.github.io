@@ -6,7 +6,7 @@ export default function Timeline({ items }) {
     return (
         <div className={timeline}>
             {items.map((item, i) => (
-                <TimelineItem item={item} key={i} />
+                <TimelineItem item={item.node} key={i} />
             ))}
         </div>
     )

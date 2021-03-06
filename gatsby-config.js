@@ -9,6 +9,7 @@ module.exports = {
   /* Your site config here */
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-transformer-json`,
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
@@ -20,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `projects`,
-        path: `${__dirname}/src/projects/`,
+        name: `data`,
+        path: `${__dirname}/src/data/`,
       },
     },
   ],

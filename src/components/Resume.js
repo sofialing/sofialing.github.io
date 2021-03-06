@@ -51,9 +51,30 @@ const education = [
 
 export default function Resume() {
     const data = useStaticQuery(graphql`
-        { site { siteMetadata { linkedin_url}}}
+        {
+            site {
+                siteMetadata {
+                    linkedin_url
+                }
+            },
+            allWorkJson {
+                edges {
+                    node {
+                        title, location, time
+                    }
+                }
+            },
+            allEducationJson {
+                edges {
+                    node {
+                        title, location, time
+                    }
+                }
+            }
+        }
     `)
     const { linkedin_url } = data.site.siteMetadata
+    console.log('resume data', data);
     return (
         <section id="resume">
             <div className={container}>
@@ -61,11 +82,11 @@ export default function Resume() {
                 <div className={columns}>
                     <div className={column}>
                         <h3>Work experience</h3>
-                        <Timeline items={work} />
+                        <Timeline items={data.allWorkJson.edges} />
                     </div>
                     <div className={column}>
                         <h3>Education</h3>
-                        <Timeline items={education} />
+                        <Timeline items={data.allEducationJson.edges} />
                     </div>
                 </div>
                 <footer>

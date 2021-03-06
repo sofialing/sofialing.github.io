@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Photo Review App",
+        "desc": "Simple photo app for reviewing and picking favorites. Built with React, Bulma CSS Framework, Cloud Firestore and Storage.",
+        "img_url": "photo-review.png",
+        "img_alt": "Project mockup",
+        "github_url": "https://github.com/sofialing/photo-review-app",
+        "demo_url": "https://photoreviewer.herokuapp.com/",
+        "tags": [
+            "React",
+            "UI Design",
+            "Firestore",
+            "Bulma"
+        ]
+    },
+    {
+        "title": "Music Player App",
+        "desc": "A Progressive Web App using Spotify Web API and Spotify Web Playback SDK. Front end built with React and Express server as backend.",
+        "img_url": "photo-review.png",
+        "img_alt": "Project mockup",
+        "github_url": "https://github.com/sofialing/music-player-app",
+        "demo_url": "https://re-music.herokuapp.com",
+        "tags": [
+            "React",
+            "Express",
+            "UI Design",
+            "API"
+        ]
+    },
+    {
+        "title": "Kill The Virus",
+        "desc": "A simple 2-player game built with Node.js, Express, Socket.io and Bulma CSS.",
+        "img_url": "photo-review.png",
+        "img_alt": "Project mockup",
+        "github_url": "https://github.com/sofialing/kill-the-virus-game",
+        "demo_url": "https://kill-the-virus-29307.herokuapp.com",
+        "tags": [
+            "Node.js",
+            "Socket io",
+            "Express",
+            "Javascript"
+        ]
+    },
+    {
+        "title": "A. Kollberg Finsnickeri",
+        "desc": "WordPress page for A. Kollberg Finsnickeri.",
+        "img_url": "photo-review.png",
+        "img_alt": "Project mockup",
+        "github_url": null,
+        "demo_url": "https://next.akollbergfinsnickeri.se",
+        "tags": [
+            "Wordpress",
+            "UI Design"
+        ]
+    },
+    {
+        "title": "Weather App",
+        "desc": "Weather app with forecasts based on users location. Personal project to learn Vue.js   ",
+        "img_url": "photo-review.png",
+        "img_alt": "Project mockup",
+        "github_url": "https://github.com/sofialing/weather-app",
+        "demo_url": "https://sofialing.github.io/weather-app",
+        "tags": [
+            "UI Design",
+            "Vue"
+        ]
+    }
+]

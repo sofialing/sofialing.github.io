@@ -2,25 +2,23 @@ import React from 'react'
 import { container, description, buttons, tags, image } from '../styles/card.module.scss'
 import { blue } from '../styles/buttons.module.scss'
 
-export default function ProjectCard() {
+export default function ProjectCard({ project }) {
+
     return (
         <article className={container}>
             <div className={description}>
-                <h3>Photo Reviewer</h3>
-                <p>Simple photo app for reviewing and picking favorites. Built with React, Bulma CSS Framework, Cloud Firestore and Storage.</p>
+                <h3>{project.title}</h3>
+                <p>{project.desc}</p>
                 <div className={buttons}>
-                    <a className={blue} href="#">View live</a>
-                    <a className={blue} href="#">View code</a>
+                    <a className={blue} href={project.demo_url}>View live</a>
+                    <a className={blue} href={project.github_url}>View code</a>
                 </div>
                 <ul className={tags}>
-                    <li>React</li>
-                    <li>UI Design</li>
-                    <li>Firestore</li>
-                    <li>Bulma</li>
+                    {project.tags.map((tag, i) => <li key={i}>{tag}</li>)}
                 </ul>
             </div>
             <div className={image}>
-                <img src={'/photo-review.png'} alt="Project mockup" />
+                <img src={'/' + project.img_url} alt={project.img_alt} />
             </div>
         </article>
     )
