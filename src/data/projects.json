@@ -30,7 +30,7 @@
     {
         "title": "Kill The Virus",
         "desc": "A simple 2-player game built with Node.js, Express, Socket.io and Bulma CSS.",
-        "img_url": "photo-review.png",
+        "img_url": "kill-the-virus.png",
         "img_alt": "Project mockup",
         "github_url": "https://github.com/sofialing/kill-the-virus-game",
         "demo_url": "https://kill-the-virus-29307.herokuapp.com",
@@ -44,7 +44,7 @@
     {
         "title": "A. Kollberg Finsnickeri",
         "desc": "WordPress page for A. Kollberg Finsnickeri.",
-        "img_url": "photo-review.png",
+        "img_url": "akollberg.png",
         "img_alt": "Project mockup",
         "github_url": null,
         "demo_url": "https://next.akollbergfinsnickeri.se",
@@ -56,7 +56,7 @@
     {
         "title": "Weather App",
         "desc": "Weather app with forecasts based on users location. Personal project to learn Vue.js   ",
-        "img_url": "photo-review.png",
+        "img_url": "weather-app.png",
         "img_alt": "Project mockup",
         "github_url": "https://github.com/sofialing/weather-app",
         "demo_url": "https://sofialing.github.io/weather-app",
