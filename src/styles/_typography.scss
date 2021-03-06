@@ -1,0 +1,39 @@
+@import './config.scss';
+
+body {
+    font-family: $font-family;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $font-weight-heading;
+    line-height: $line-height-heading;
+}
+
+h1 {
+    font-size: 4.209rem;
+}
+h2 {
+    font-size: 3.157rem;
+}
+h3 {
+    font-size: 2.369rem;
+}
+h4 {
+    font-size: 1.777rem;
+}
+h5 {
+    font-size: 1.333rem;
+}
+small,
+.text_small {
+    font-size: 0.75rem;
+}

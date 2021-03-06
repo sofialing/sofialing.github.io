@@ -1,0 +1,57 @@
+@import './config.scss';
+
+.resume {
+    background-color: #ECECEC;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    &:before {
+        background: $color-primary;
+        content: "";
+        display: inline-block;
+        height: 100%;
+        position: absolute;
+        left: 6px;
+        top: 0;
+        width: 2px;
+    }
+}
+
+.timelineItem {
+    position: relative;
+    &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: -32px;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        border: 4px solid $color-primary;
+        background: $color-white;
+        border-radius: 50%;
+        transition: background .3s ease-in-out, transform .5s ease-in-out;
+    }
+    &:hover {
+        &:before {
+            background: $color-primary;
+            transform: scale(1.1);
+        }
+    }
+    h4 {
+        font-size: $font-size-base;
+        font-weight: 600;
+        letter-spacing: .025em;
+    }
+    p {
+        margin: 0;
+        &:last-child {
+            color: #606060;
+        }
+    }
+    + .timelineItem {
+        margin-top: 1.5rem;
+    }
+}
