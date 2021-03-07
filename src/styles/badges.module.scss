@@ -1,0 +1,10 @@
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    li {
+        margin: .5rem .5rem 0 0;
+    }
+}
