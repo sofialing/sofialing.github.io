@@ -25,12 +25,20 @@
 
 .columns {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 2.5rem;
+    @include media($lg-screen) {
+        flex-wrap: nowrap;
+    }
+
 }
 
 .column {
     flex-basis: 100%;
     + .column {
-        margin: 0 0 0 2.5rem;
+        margin: 2.5rem 0 0 0;
+        @include media($lg-screen) {
+            margin: 0 0 0 2.5rem;
+        }
     }
 }

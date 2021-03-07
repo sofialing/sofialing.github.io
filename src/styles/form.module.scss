@@ -4,20 +4,12 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    max-width: 800px;
     margin: 3rem auto 0;
-    div:nth-child(1), 
-    div:nth-child(2) {
-        flex-basis: calc(50% - .75rem);
-    }
-    div:nth-child(2) {
-        margin: 0 0 0 1.5rem;
-    }
-    div:nth-child(3) {
-        flex-basis: 100%;
+    div + div {
         margin-top: 1.5rem;
     }
     div {
+        flex-basis: 100%;
         display: block;
         position: relative;
         input,
@@ -80,6 +72,20 @@
             color: $color-primary;
             cursor: pointer;
             outline: none;
+        }
+    }
+    @include media($lg-screen) {
+        max-width: 800px;
+        div:nth-child(1), 
+        div:nth-child(2) {
+            flex-basis: calc(50% - .75rem);
+        }
+        div:nth-child(2) {
+            margin: 0 0 0 1.5rem;
+        }
+        div:nth-child(3) {
+            flex-basis: 100%;
+            margin-top: 1.5rem;
         }
     }
 }

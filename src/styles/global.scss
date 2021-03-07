@@ -1,5 +1,5 @@
 @import './config.scss';
-@import './typography';
+@import './typography.scss';
 
 *,
 *::before,
@@ -23,6 +23,7 @@ body {
     min-height: 100vh;
     position: relative;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 img {
@@ -32,127 +33,32 @@ img {
     margin: 0;
 }
 
-section:nth-child(even):not(:nth-of-type(1)) {
-    background-color: #ECECEC; 
-}
-
-section h2 {
-    padding: 0 0 1rem;
-    position: relative;
-    text-align: center;
-    &:after {
-        background-color: lighten($color-accent, 25%);
-        content: '';
-        height: 3px;
-        width: 2.5rem;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+section {
+   h2 {
+        padding: 0 0 1rem;
+        position: relative;
+        text-align: center;
+        &:after {
+            background-color: lighten($color-accent, 25%);
+            content: '';
+            height: 3px;
+            width: 2.5rem;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
-}
-
-
-
-section footer {
-    text-align: center;
-    margin-top: 3rem;
+    footer {
+        text-align: center;
+        margin-top: 3rem;
+    }
+    &:nth-child(even):not(:nth-of-type(1)) {
+        background-color: #ECECEC; 
+    }
 }
 
 #resume h3 {
     font-size: 1.777rem;
     font-weight: 600;
-}
-
-.navbar {
-    background: $color-dark;
-    color: white;
-    &__inner {
-        padding: 1rem;
-        margin: 0 auto;
-        max-width: 1140px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &__logo {
-        color: white;
-        font-size: 1.25rem;
-        text-decoration: none;
-    }
-    &__menu {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        &--item {
-            margin: 0;
-            padding: .5rem 1rem;
-            & a {
-                color: white;
-                letter-spacing: .05em;
-                position: relative;
-                text-decoration: none;
-                &::after {
-                    background: white;
-                    content: '';
-                    display: block;
-                    width: 0;
-                    height: 2px;
-                    position: absolute;
-                    bottom: -.25em;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    transition: width .45s cubic-bezier(.32,.01,.19,1.4);
-                }
-                &:hover,
-                &:focus {
-                    &::after {
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-
-.footer {
-    background: $color-dark;
-    color: white;
-    margin: 0;
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-        max-width: 1140px;
-        padding: 1rem 0;
-        p {
-            font-size: .875rem;
-            letter-spacing: .025em;
-            margin: 0;
-        }
-        ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            li {
-                font-size: .875rem;
-                margin: 0;
-                padding: 0;
-                a {
-                    color: white;
-                    letter-spacing: .025em;
-                    text-decoration: none;
-                }
-            }
-            li + li {
-                margin-left: 1rem;
-            }
-        }
-    }
 }

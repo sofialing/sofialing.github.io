@@ -1,0 +1,39 @@
+@import './config.scss';
+
+.footer {
+    background: $color-dark;
+    color: white;
+    margin: 0;
+    > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        p {
+            font-size: .875rem;
+            letter-spacing: .025em;
+            margin: 0;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                font-size: .875rem;
+                margin: 0;
+                padding: 0;
+                a {
+                    color: white;
+                    letter-spacing: .025em;
+                    text-decoration: none;
+                }
+            }
+            li + li {
+                margin-left: 1rem;
+            }
+        }
+    }
+}

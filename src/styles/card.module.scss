@@ -2,21 +2,25 @@
 
 .container {
     display: flex;
+    flex-direction: column-reverse;
     border-radius: $radius;
     box-shadow: $shadow;
     min-height: 375px;
     margin-top: 2.5rem;
-    &:nth-child(odd) {
-        flex-direction: row-reverse;
-        .image {
-            border-radius: $radius 0 0 $radius;
+    @include media($lg-screen) {
+        flex-direction: row;
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+            .image {
+                border-radius: $radius 0 0 $radius;
+            }
         }
-    }
-    &:hover {
-        .image {
-            background: #9FBABD;
-            img {
-                transform: scale(1.1) translateX(-1rem);
+        &:hover {
+            .image {
+                background: #9FBABD;
+                img {
+                    transform: scale(1.1) translateX(-1rem);
+                }
             }
         }
     }
@@ -25,18 +29,21 @@
 .description {
     display: flex;
     flex-direction: column;
-    flex: 0 0 50%;
-    padding: 2.25rem;
-    width: 50%;
+    padding: 1.5rem;
+    flex: 0 0 100%;
+    @include media($lg-screen) {
+        flex: 0 0 50%;
+        width: 50%;
+        padding: 2.25rem;
+    }
 }
 
 .image {
     background: #5E7274;
-    border-radius: 0 $radius $radius 0;
-    flex: 0 0 50%;
+    border-radius: $radius $radius 0 0;
+    flex: 0 0 100%;
     margin: 0;
     overflow: hidden;
-    width: 50%;
     transition: background .5s ease-in-out;
     img {
         object-fit: cover;
@@ -44,17 +51,30 @@
         width: 100%;
         transition: transform .5s ease-in-out;
     }
+    @include media($lg-screen) {
+        border-radius: 0 $radius $radius 0;
+        flex: 0 0 50%;
+        width: 50%;
+        padding: 2.25rem;
+    }
 }
 
 .buttons {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
+    a + a {
+        margin: 0 0 0 .75em;
+    }
+    @include media($lg-screen) {
+        margin-top: 2.5rem;
+    }
 }
 
 .tags {
     display: flex;
+    flex-wrap: wrap;
     justify-self: flex-end;
     list-style-type: none;
-    margin-top: auto;
+    margin-top: 1.5rem;
     padding: 0;
     li {
         background-color: #B7CBCD;
@@ -63,8 +83,9 @@
         letter-spacing: .05em;
         padding: .25rem .75rem;
         text-transform: uppercase;
+        margin: 0.5rem 0.5rem 0 0;
     }
-    li + li {
-        margin: 0 0 0 .5rem;
+    @include media($lg-screen) {
+        margin-top: auto;
     }
 }
