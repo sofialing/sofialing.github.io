@@ -1,0 +1,101 @@
+@import './config.scss';
+
+.navbar {
+    background: #0d0d0d;
+    color: white;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    > div {
+        display: flex;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+    }
+    @include media($lg-screen) {
+        background: $color-dark;
+        position: sticky;
+        top: 0;
+        bottom: initial;
+        > div {
+            justify-content: space-between;
+        }
+    }
+}
+
+.logo {
+    display: none;
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    @include media($lg-screen) {
+        display: initial;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    li {
+        flex-basis: 100%;
+        margin: 0;
+        + li {
+            margin: 0 0 0 1rem;
+        }
+        &:last-of-type {
+            display: none;
+        }
+        a {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1;
+            letter-spacing: .05em;
+            position: relative;
+            text-decoration: none;
+            span {
+                margin-top: .5em;
+            }
+        }
+    }
+    @include media($lg-screen) {
+        width: unset;
+        li {
+            flex-basis: auto;
+            padding: .5em;
+            a::after {
+                background: white;
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                position: absolute;
+                bottom: -.25em;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: width .45s cubic-bezier(.32,.01,.19,1.4);
+            }
+            a:hover,
+            a:focus {
+                &::after {
+                    width: 100%;
+                }
+            }
+            a svg {
+                display: none;
+            }
+            a span {
+                margin-top: 0;
+            }
+            &:last-of-type {
+                display: initial;
+            }
+        }
+    }
+}

@@ -1,5 +1,10 @@
 import React from 'react'
 import { graphql, Link, useStaticQuery } from 'gatsby'
+import BusinessCenterIcon from '@material-ui/icons/BusinessCenter'
+import DeveloperBoardIcon from '@material-ui/icons/DeveloperBoard'
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd'
+import { navbar, logo, menu } from '../styles/navbar.module.scss'
+import { container } from '../styles/container.module.scss'
 
 export default function Navbar() {
     const data = useStaticQuery(graphql`
@@ -8,20 +13,29 @@ export default function Navbar() {
     const { title } = data.site.siteMetadata
 
     return (
-        <nav className="navbar">
-            <div className="navbar__inner">
-                <Link to="/" className="navbar__logo">{title}</Link>
-                <ul className="navbar__menu">
-                    <li className="navbar__menu--item">
-                        <Link to="#projects">Projects</Link>
+        <nav className={navbar}>
+            <div className={container}>
+                <Link to="/" className={logo}>{title}</Link>
+                <ul className={menu}>
+                    <li>
+                        <Link to="#projects">
+                            <DeveloperBoardIcon />
+                            <span>Projects</span>
+                        </Link>
                     </li>
-                    <li className="navbar__menu--item">
-                        <Link to="#skills">Skills</Link>
+                    <li>
+                        <Link to="#resume">
+                            <BusinessCenterIcon />
+                            <span>Resume</span>
+                        </Link>
                     </li>
-                    <li className="navbar__menu--item">
-                        <Link to="#resume">Resume</Link>
+                    <li>
+                        <Link to="#skills">
+                            <AssignmentIndIcon />
+                            <span>Skills</span>
+                        </Link>
                     </li>
-                    <li className="navbar__menu--item">
+                    <li>
                         <Link to="#contact">Contact</Link>
                     </li>
                 </ul>

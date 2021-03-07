@@ -3,7 +3,24 @@
 .container {
     margin: 0 auto;
     max-width: $max-width;
-    padding: 4rem $padding-side;
+    width: 100%;
+    padding: 4rem $padding-side-small;
+    @include media($sm-screen) {
+        padding-left: $padding-side/3;
+        padding-right: $padding-side/3;
+    }
+    @include media($md-screen) {
+        padding-left: $padding-side/2;
+        padding-right: $padding-side/2;
+    }
+    @include media($lg-screen) {
+        padding-left: $padding-side/1.5;
+        padding-right: $padding-side/1.5;
+    }
+    @include media($xlg-screen) {
+        padding-left: $padding-side;
+        padding-right: $padding-side;
+    }
 }
 
 .columns {
