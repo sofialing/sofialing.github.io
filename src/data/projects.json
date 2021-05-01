@@ -2,7 +2,7 @@
     {
         "title": "Music Player App",
         "desc": "A Progressive Web App using Spotify Web API and Spotify Web Playback SDK. Front end built with React and Express server as backend.",
-        "img_url": "/re-music-mockup.png",
+        "img_url": "/images/re-music-mockup.png",
         "img_alt": "Music player app mockup",
         "github_url": "https://github.com/sofialing/music-player-app",
         "demo_url": "https://re-music.herokuapp.com",
@@ -17,7 +17,7 @@
     {
         "title": "Photo Review App",
         "desc": "Simple photo app for reviewing and picking favorites. Built with React, Bulma CSS Framework, Cloud Firestore and Storage.",
-        "img_url": "/photo-review-mockup.png",
+        "img_url": "/images/photo-review-mockup.png",
         "img_alt": "Photo review app mockup",
         "github_url": "https://github.com/sofialing/photo-review-app",
         "demo_url": "https://photoreviewer.herokuapp.com/",
@@ -31,7 +31,7 @@
     {
         "title": "A. Kollberg Finsnickeri",
         "desc": "A WordPress theme built using Sage.",
-        "img_url": "/akollberg-mockup.png",
+        "img_url": "/images/akollberg-mockup.png",
         "img_alt": "A Kollberg finsnickeri mockup",
         "github_url": null,
         "demo_url": "https://next.akollbergfinsnickeri.se",
@@ -46,7 +46,7 @@
     {
         "title": "Kill The Virus",
         "desc": "A simple 2-player game built with Node.js, Express.js, Socket.io and Bulma CSS.",
-        "img_url": "/kill-the-virus.png",
+        "img_url": "/images/kill-the-virus.png",
         "img_alt": "Kill the virus mockup",
         "github_url": "https://github.com/sofialing/kill-the-virus-game",
         "demo_url": "https://kill-the-virus-29307.herokuapp.com",
@@ -60,7 +60,7 @@
     {
         "title": "Weather App",
         "desc": "A weather app that fetches weather forecast from OpenWeatherMap.org based on user's location. Different backgrounds and icons based on current weather.",
-        "img_url": "/weather-app.png",
+        "img_url": "/images/weather-app.png",
         "img_alt": "Weather app mockup",
         "github_url": "https://github.com/sofialing/weather-app",
         "demo_url": "https://weather-app-77294.herokuapp.com/",
