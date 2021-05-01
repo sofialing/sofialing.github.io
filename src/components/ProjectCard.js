@@ -18,7 +18,7 @@ export default function ProjectCard({ project }) {
                 </ul>
             </div>
             <div className={image}>
-                <img src={'/' + project.img_url} alt={project.img_alt} />
+                <img src={project.img_url} alt={project.img_alt} />
             </div>
         </article>
     )

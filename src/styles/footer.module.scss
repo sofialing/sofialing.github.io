@@ -4,6 +4,10 @@
     background: $color-dark;
     color: white;
     margin: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.375rem;
     > div {
         display: flex;
         justify-content: space-between;

@@ -17,10 +17,10 @@ export default function Hero() {
     `)
     const { subtitle, description } = data.site.siteMetadata
     return (
-        <section className={hero}>
+        <section id="hero" className={hero}>
             <div className={container}>
-                <h1>{subtitle}</h1>
-                <p>{description}</p>
+                <h1 className="animate__animated animate__fadeInUp animate__delay-2s">{subtitle}</h1>
+                <p className="animate__animated animate__fadeInUp animate__delay-3s">{description}</p>
             </div>
         </section>
     )

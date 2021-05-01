@@ -16,11 +16,8 @@
             }
         }
         &:hover {
-            .image {
-                background: #9FBABD;
-                img {
-                    transform: scale(1.1) translateX(-1rem);
-                }
+            .image img {
+                transform: scale(1.1) translateX(-1rem);
             }
         }
     }
@@ -55,7 +52,7 @@
         border-radius: 0 $radius $radius 0;
         flex: 0 0 50%;
         width: 50%;
-        padding: 2.25rem;
+        // padding: 2.25rem;
     }
 }
 

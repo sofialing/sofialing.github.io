@@ -7,15 +7,15 @@ export default function Contact() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const onSubmit = e => {
-        e.preventDefault();
-    }
+    // const onSubmit = e => {
+    //     e.preventDefault();
+    // }
 
     return (
-        <section id="contact" onSubmit={onSubmit}>
+        <section id="contact">
             <div className={container}>
                 <h2>Contact</h2>
-                <form className={contactForm}>
+                <form className={contactForm} method="post" action="https://getform.io/f/4d48c486-b720-4fad-8913-03b4ad5000c6">
                     <div>
                         <input
                             type="text"

@@ -20,10 +20,20 @@ body {
     background: $color-white;
     color: #2e3131;
     margin: 0;
+    padding: 0;
     min-height: 100vh;
     position: relative;
     width: 100vw;
     overflow-x: hidden;
+}
+
+#query-on-demand-indicator-element,
+gatsby-portal {
+    margin: 0;
+}
+
+.layout {
+    padding-bottom: 3.375rem;    /* Footer height */
 }
 
 img {

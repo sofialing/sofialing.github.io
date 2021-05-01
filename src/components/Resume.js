@@ -44,7 +44,8 @@ export default function Resume() {
                     </div>
                 </div>
                 <footer>
-                    <a className={blue} href={linkedin_url}>Complete resume</a>
+                    <a className={blue} href="/sofia-ling-cv.pdf">Download resume</a>
+                    <a className={blue} href={linkedin_url}>Linkedin</a>
                 </footer>
             </div>
         </section>

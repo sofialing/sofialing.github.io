@@ -6,7 +6,7 @@
     font-size: .875rem;
     font-weight: 600;
     letter-spacing: .05em;
-    margin: 0;
+    margin: 0 .5rem;
     padding: .75em 1.5em; 
     text-decoration: none;
     text-transform: uppercase;
@@ -16,7 +16,6 @@
     }
 
 }
-
 .blue {
     composes: btn;
     background-color: $color-primary;

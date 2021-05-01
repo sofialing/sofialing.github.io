@@ -30,7 +30,10 @@
     font-size: 1.25rem;
     text-decoration: none;
     @include media($lg-screen) {
-        display: initial;
+        display: inline-block;
+        &:focus {
+            outline: none;
+        }
     }
 }
 
@@ -76,13 +79,14 @@
                 width: 0;
                 height: 2px;
                 position: absolute;
-                bottom: -.25em;
+                bottom: -.5em;
                 left: 50%;
                 transform: translateX(-50%);
                 transition: width .45s cubic-bezier(.32,.01,.19,1.4);
             }
             a:hover,
             a:focus {
+                outline: none;
                 &::after {
                     width: 100%;
                 }

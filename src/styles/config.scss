@@ -1,3 +1,7 @@
 @import './config/reset';
 @import './config/mixins';
 @import './config/variables';
+
+:root {
+    --animate-delay: 0.5s;
+}

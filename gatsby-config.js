@@ -10,6 +10,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-transformer-json`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
@@ -25,6 +26,12 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -50
+      }
+    }
   ],
   siteMetadata: {
     title: 'Sofia Ling',

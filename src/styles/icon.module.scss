@@ -1,0 +1,17 @@
+@import './config.scss';
+
+.icon {
+    background-color: $color-gray;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    svg {
+        width: 3rem;
+        height: auto;
+    }
+}

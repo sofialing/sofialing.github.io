@@ -1,10 +1,12 @@
 import React from 'react'
-import { graphql, Link, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter'
 import DeveloperBoardIcon from '@material-ui/icons/DeveloperBoard'
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd'
 import { navbar, logo, menu } from '../styles/navbar.module.scss'
 import { container } from '../styles/container.module.scss'
+
 
 export default function Navbar() {
     const data = useStaticQuery(graphql`
@@ -15,28 +17,28 @@ export default function Navbar() {
     return (
         <nav className={navbar}>
             <div className={container}>
-                <Link to="/" className={logo}>{title}</Link>
+                <AnchorLink to="/#hero" className={logo}>{title}</AnchorLink>
                 <ul className={menu}>
                     <li>
-                        <Link to="#projects">
+                        <AnchorLink to="/#projects">
                             <DeveloperBoardIcon />
                             <span>Projects</span>
-                        </Link>
+                        </AnchorLink>
                     </li>
                     <li>
-                        <Link to="#resume">
+                        <AnchorLink to="/#resume">
                             <BusinessCenterIcon />
                             <span>Resume</span>
-                        </Link>
+                        </AnchorLink>
                     </li>
                     <li>
-                        <Link to="#skills">
+                        <AnchorLink to="/#skills">
                             <AssignmentIndIcon />
                             <span>Skills</span>
-                        </Link>
+                        </AnchorLink>
                     </li>
                     <li>
-                        <Link to="#contact">Contact</Link>
+                        <AnchorLink to="/#contact">Contact</AnchorLink>
                     </li>
                 </ul>
             </div>
