@@ -1,0 +1,2 @@
+(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[883],{9616:function(e,t,n){"use strict";n.r(t),n.d(t,{default:function(){return u}});var l=n(7294),o=n(5414),r=n(9804);function u(){return l.createElement(r.Z,null,l.createElement(o.q,null,l.createElement("title",null,"Sofia Ling | Portfolio")),l.createElement("p",{style:{textAlign:"center",margin:"20vh auto"}},"Oh no! Page could not be found."))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-9c8312e7c98087082be3.js.map
