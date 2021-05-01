@@ -40,5 +40,5 @@ module.exports = {
     linkedin_url: 'https://www.linkedin.com/in/sofia-ling-118a19a8/',
     github_url: 'https://github.com/sofialing',
     dribbble_url: 'https://dribbble.com/sofialing',
-  },
+  }
 }
